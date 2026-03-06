@@ -1,9 +1,15 @@
 ﻿namespace Lab1NET;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        const int start = 1;
+        const int end = 100;
+        var fizzBuzz = new FizzBuzz(start, end);
+        for (var i = start; i <= end; i++)
+        {
+            fizzBuzz.PrintFizzBuzz(i);
+        }
     }
 }
